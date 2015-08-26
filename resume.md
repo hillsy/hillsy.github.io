@@ -1,6 +1,7 @@
 ---
 layout: resume
 title: My résumé
+permalink: /resume/
 ---
 
 # Shaun Hills
