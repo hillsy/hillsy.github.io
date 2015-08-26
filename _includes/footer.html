@@ -1,7 +1,16 @@
 <footer class="site-footer">
 
+    <script>
+        $(document).ready(function () {
+            var pathname = window.location.pathname;
+            if (pathname === '/') {
+                $("#go-to-the-home-page").remove();
+            }
+        });
+    </script>
+
     <div class="wrapper">
-        <a href="{{ site.baseurl }}/">Go to the home page</a>
+        <a id="go-to-the-home-page" href="{{ site.baseurl }}/">Go to the home page</a>
     </div>
 
 </footer>
