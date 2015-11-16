@@ -22,11 +22,14 @@ Hands up if you've ever worked on or used a website or application that falls in
 Shirky's got more though, and this is where we start breaking newer ground for digital service design. If you maintain a centralised, comprehensive classification system, categorisers are expected to come up with categories that not only make sense to all end users, but that are also future proof. Here's what he says:
 
 > Consider the following statements:
+>
 >   A: "This is a book about Dresden."
+>
 >   B: "This is a book about Dresden, and it goes in the category 'East Germany'." 
+>
 > That second sentence seems so obvious, but East Germany actually turned out to be an unstable category. Cities are real. They are real, physical facts. Countries are social fictions. It is much easier for a country to disappear than for a city to disappear, so when you're saying that the small thing is contained by the large thing, you're actually mixing radically  different kinds of entities.
 
-Real world example time. I once worked on branding and domain names for some digital services deployed in the public sector. The organisation running the services would occasionally get reorganised out of existence according to the political currents of the time. This wasn't new; its two predecessor organisations had lasted about eight years each. And the same was happening to plenty of other organisations.
+I once worked on branding and domain names for some digital services deployed in the public sector. The organisation running the services would occasionally get reorganised out of existence according to the political currents of the time. This wasn't new; its two predecessor organisations had lasted about eight years each. And the same was happening to plenty of other organisations.
 
 But here's the thing: this third incarnation was still managing many of the services developed 15-odd years earlier by the predecessor organisations. These services were important; much more so than the name of the organisation that was managing them.
 
