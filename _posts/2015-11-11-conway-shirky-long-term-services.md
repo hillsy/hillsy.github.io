@@ -7,7 +7,7 @@ categories: architecture, servicedesign, ontology
 comments:   true
 ---
 
-Clay Shirky's [Ontology is Overrated] [1] is one of my all-time favourite articles about the way information should be, often is, and often isn't, organised on the World Wide Web.
+Clay Shirky's [Ontology is Overrated] [^1] is one of my all-time favourite articles about the way information should be, often is, and often isn't, organised on the World Wide Web.
 
 The main theme in the article is that information on the Web is completely decentralised. It's impossible and indeed **undesirable** to kludge a centralised, comprehensive classification system (like a library catalogue) onto it. If people want to associate bits of information on the Web with other bits, that's up to them and they can do it in a very direct way. Hyperlinks are powerful things.
 
@@ -15,7 +15,7 @@ Shirky also says these library-like classification systems exist to solve proble
 
 There are implications here for how we should design digital services. We shouldn't try to pigeon-hole information into one particular classification category. We shouldn't assume that users will follow a predetermined path to a service entry point; direct linking and Google searches for information happen. We should assume that users will follow a multiplicity of paths.
 
-People familiar with [Conway's Law] [3] will be on familiar territory. The design of a system tends to reflect the communication structure of the organisation building it. Conway says *communication* structure, but I suspect his law should be broader. System designs can also reflect the organisation's *theoretical* (on paper) structure, even if that's not how it is in reality. They can also reflect constrained collective thinking - and here's the tie-in with Shirky - about classification and hierarchy. "Thing A is the domain of department B, so that's where it goes in the UI".
+People familiar with [Conway's Law] [^2] will be on familiar territory. The design of a system tends to reflect the communication structure of the organisation building it. Conway says *communication* structure, but I suspect his law should be broader. System designs can also reflect the organisation's *theoretical* (on paper) structure, even if that's not how it is in reality. They can also reflect constrained collective thinking - and here's the tie-in with Shirky - about classification and hierarchy. "Thing A is the domain of department B, so that's where it goes in the UI".
 
 Hands up if you've ever worked on or used a website or application that falls into these traps. OK, hands down, thanks. Service designers, please stop doing this.
 
@@ -37,8 +37,6 @@ Sometimes these services would have close ties to the branding, corporate "messa
 
 So, back to Clay's example of classifying a book about "Dresden" into "East Germany". Substitute "important digital service" for "city", "organisation" for "country" and "bureaucratic construct" for "social fiction". It's pretty easy to see why we should be careful about tying digital services too closely to the organisational/political structure *du jour*.
 
-[1] http://www.shirky.com/writings/ontology_overrated.html "Ontology is Overrated: Categories, Links, and Tags"
+[^1]: http://www.shirky.com/writings/ontology_overrated.html "Ontology is Overrated: Categories, Links, and Tags"
 
-[2] http://yahoo.tumblr.com/post/98474044364/progress-report-continued-product-focus "Apparently Yahoo Directory was finally shut down last year"
-
-[3] http://www.melconway.com/Home/Conways_Law.html         "Conway's Law"
+[^2]: http://www.melconway.com/Home/Conways_Law.html         "Conway's Law"
