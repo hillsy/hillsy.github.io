@@ -6,7 +6,7 @@ image-file:   this-is-optional.jpg
 image-alt:    "If you don't define an image, the template skips it. Images need to go in ../assets"
 image-credit: http://url/to/your/image/source/or/whatever
 date:         1970-01-01
-categories:   update, post, fnord
+categories:   update post fnord
 comments:     true
 ---
 
