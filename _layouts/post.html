@@ -10,8 +10,8 @@ layout: default
             <h2 class="post-readout">{{ page.readout }}</h2>
         {% endif %}
         <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-        {% if page.image %}
-            <img src="{{ site.baseurl }}/assets/{{ page.image.url }}" alt="{{ page.image.alt }}" title="Image credit: {{ page.image.credit }}" class="img-responsive" />
+        {% if page.image-file %}
+            <img src="{{ site.baseurl }}/assets/{{ page.image-file }}" alt="{{ page.image-alt }}" title="Image credit: {{ page.image-credit }}" class="img-responsive" />
         {% endif %}
     </header>
 

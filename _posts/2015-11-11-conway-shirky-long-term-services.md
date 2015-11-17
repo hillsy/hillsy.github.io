@@ -2,12 +2,10 @@
 layout:       post
 title:        "Shirky, Conway, and designing for the long term"
 readout:      "Why your digital service should be independent of your current temporary organisational reality"
-image:        
-
+image:
  - file:      card-catalogue.jpg
    credit:    https://commons.wikimedia.org/wiki/File%3ACard_Catalog_2.jpg
    alt:       "Picture of a library card catalogue"
-
 date:         2015-11-11
 categories:   architecture, servicedesign, ontology
 comments:     true
@@ -31,7 +29,7 @@ Shirky's got more though, and this is where we start breaking newer ground for d
 >
 >   A: "This is a book about Dresden."
 >
->   B: "This is a book about Dresden, and it goes in the category 'East Germany'." 
+>   B: "This is a book about Dresden, and it goes in the category 'East Germany'."
 >
 > That second sentence seems so obvious, but East Germany actually turned out to be an unstable category. Cities are real. They are real, physical facts. Countries are social fictions. It is much easier for a country to disappear than for a city to disappear, so when you're saying that the small thing is contained by the large thing, you're actually mixing radically  different kinds of entities.
 
