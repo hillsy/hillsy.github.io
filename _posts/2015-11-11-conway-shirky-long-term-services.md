@@ -6,7 +6,8 @@ image-file:   card-catalogue.jpg
 image-credit: https://commons.wikimedia.org/wiki/File%3ACard_Catalog_2.jpg
 image-alt:    "Picture of a library card catalogue"
 date:         2015-11-11
-categories:   architecture servicedesign ontology
+categories:   post
+tags:         [architecture, servicedesign, ontology]
 comments:     true
 ---
 
