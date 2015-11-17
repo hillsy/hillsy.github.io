@@ -1,13 +1,19 @@
 ---
-layout:     post
-title:      "Shirky, Conway, and designing for the long term"
-readout:    "Why your digital service should be independent of your current temporary organisational reality"
-date:       2015-11-11
-categories: architecture, servicedesign, ontology
-comments:   true
+layout:       post
+title:        "Shirky, Conway, and designing for the long term"
+readout:      "Why your digital service should be independent of your current temporary organisational reality"
+image:        
+
+ - file:      card-catalogue.jpg
+   credit:    https://commons.wikimedia.org/wiki/File%3ACard_Catalog_2.jpg
+   alt:       "Picture of a library card catalogue"
+
+date:         2015-11-11
+categories:   architecture, servicedesign, ontology
+comments:     true
 ---
 
-Clay Shirky's *Ontology is Overrated*[^1] is one of my all-time favourite articles about the way information should be, often is, and often isn't, organised on the World Wide Web.
+Clay Shirky's *Ontology is Overrated* [^1] is one of my all-time favourite articles about the way information should be, often is, and often isn't, organised on the World Wide Web.
 
 The main theme in the article is that information on the Web is completely decentralised. It's impossible and indeed **undesirable** to kludge a centralised, comprehensive classification system (like a library catalogue) onto it. If people want to associate bits of information on the Web with other bits, that's up to them and they can do it in a very direct way. Hyperlinks are powerful things.
 
@@ -15,7 +21,7 @@ Shirky also says these library-like classification systems exist to solve proble
 
 There are implications here for how we should design digital services. We shouldn't try to pigeon-hole information into one particular classification category. We shouldn't assume that users will follow a predetermined path to a service entry point; direct linking and Google searches for information happen. We should assume that users will follow a multiplicity of paths.
 
-People familiar with Conway's Law[^2] will be on familiar territory. The design of a system tends to reflect the communication structure of the organisation building it. Conway says *communication* structure, but I suspect his law should be broader. System designs can also reflect the organisation's *theoretical* (on paper) structure, even if that's not how it is in reality. They can also reflect constrained collective thinking - and here's the tie-in with Shirky - about classification and hierarchy. "Thing A is the domain of department B, so that's where it goes in the UI".
+People familiar with Conway's Law [^2] will be on familiar territory. The design of a system tends to reflect the communication structure of the organisation building it. Conway says *communication* structure, but I suspect his law should be broader. System designs can also reflect the organisation's *theoretical* (on paper) structure, even if that's not how it is in reality. They can also reflect constrained collective thinking - and here's the tie-in with Shirky - about classification and hierarchy. "Thing A is the domain of department B, so that's where it goes in the UI".
 
 Hands up if you've ever worked on or used a website or application that falls into these traps. OK, hands down, thanks. Service designers, please stop doing this.
 
