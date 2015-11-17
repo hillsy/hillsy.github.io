@@ -2,10 +2,9 @@
 layout:       post
 title:        "Shirky, Conway, and designing for the long term"
 readout:      "Why your digital service should be independent of your current temporary organisational reality"
-image:
- - file:      card-catalogue.jpg
-   credit:    https://commons.wikimedia.org/wiki/File%3ACard_Catalog_2.jpg
-   alt:       "Picture of a library card catalogue"
+image-file:   card-catalogue.jpg
+image-credit: https://commons.wikimedia.org/wiki/File%3ACard_Catalog_2.jpg
+image-alt:    "Picture of a library card catalogue"
 date:         2015-11-11
 categories:   architecture, servicedesign, ontology
 comments:     true
