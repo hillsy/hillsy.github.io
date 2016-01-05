@@ -1,17 +1,16 @@
 @font-face {
     font-family: "Biolinum";
-    src: url("fonts/linbiolinum_r.woff") format("woff");
+    src: url("#{$font-asset-path}/linbiolinum_r.woff") format("woff");
 }
 
 @font-face {
     font-family: "Biolinum";
-    src: url("fonts/linbiolinum_rb.woff") format("woff");
+    src: url("#{$font-asset-path}/linbiolinum_rb.woff") format("woff");
     font-weight: bold;
 }
 
 @font-face {
     font-family: "Biolinum";
-    src: url("fonts/linbiolinum_ri.woff") format("woff");
+    src: url("#{$font-asset-path}/linbiolinum_ri.woff") format("woff");
     font-style: italic;
 }
-
