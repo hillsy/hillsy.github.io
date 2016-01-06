@@ -70,7 +70,7 @@ Here's a short example. It assumes you already know a bit about how to use the c
    bin/buildout -v
    ```
 
-3. ...some stuff happens... quite a bit if you're compiling lxml...
+3. ...some stuff happens... *...quite a bit if you're compiling lxml...*
 
 4. Get and compile a sample theme. You can see a full list of command line flags with `bin/diazocompiler --help`
    ```
