@@ -63,15 +63,22 @@ Here's a short example. I'll assume you already know a bit about how to use the 
 
      pip install zc.buildout
      ```
+
  2. lxml is a dependency; this buildout downloads and compiles the correct version. Alternative buildouts and installation methods are in the Diazo documentation [^5]
     ```
     curl http://hillsy.org/assets/diazo-buildout.cfg > buildout.cfg
 
     bin/buildout -v
     ```
+
  3. ...some stuff happens... quite a bit if you're compiling lxml...
 
+ To deploy changes:
 
+ Make your edits and svn switch on the filesystem, to get the new theme code
+ Compile the theme: bin/diazocompiler -r wwwcfh.xml -o /etc/apache2/wwwcfh.xsl
+ Restart Apache: /etc/init.d/apache2 restart
+ Note the command line arguments passed to bin/diazocompiler. You can see a full list of options with bin/diazocompiler --help
 
 
 
