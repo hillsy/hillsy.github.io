@@ -67,6 +67,7 @@ Here's a short example. It assumes you already know a bit about how to use the c
 2. lxml is a dependency; this buildout downloads and compiles the correct version (alternative buildouts and installation methods are in the Diazo documentation [^5])
    ```
    curl http://hillsy.org/assets/diazo-buildout.cfg > buildout.cfg
+
    bin/buildout -v
    ```
 
@@ -75,28 +76,28 @@ Here's a short example. It assumes you already know a bit about how to use the c
 4. Get and compile a sample theme. You can see a full list of command line flags with `bin/diazocompiler --help`
    ```
    svn co https://svn.plone.org/svn/collective/collective.examples.diazo/trunk/collective/examples/diazo/static/collective-xdv-example/ ./theme
+
    bin/diazocompiler -r theme/rules.xml -o theme/theme.xsl
    ```
 
 7. Sample config to deploy the XSLT to your web server (Apache in this case)
-   ```
-   # see http://docs.diazo.org/en/latest/deployment.html#apache
-   LoadModule transform_module /usr/lib/apache2/modules/mod_transform.so
-   <VirtualHost *>
 
-     FilterDeclare THEME
-     FilterProvider THEME XSLT resp=Content-Type $text/html
+        # see http://docs.diazo.org/en/latest/deployment.html#apache
+        LoadModule transform_module /usr/lib/apache2/modules/mod_transform.so
+        <VirtualHost *>
 
-     TransformOptions +ApacheFS +HTML +HideParseErrors
-     TransformSet /path/to/theme.xsl
-     TransformCache /theme.xsl /etc/apache2/theme.xsl
+             FilterDeclare THEME
+             FilterProvider THEME XSLT resp=Content-Type $text/html
 
-     <LocationMatch "/">
-        FilterChain THEME
-     </LocationMatch>
+             TransformOptions +ApacheFS +HTML +HideParseErrors
+             TransformSet /path/to/theme.xsl
+             TransformCache /theme.xsl /etc/apache2/theme.xsl
 
-   </VirtualHost>
-   ```
+             <LocationMatch "/">
+                FilterChain THEME
+             </LocationMatch>
+
+        </VirtualHost>
 
 There's quite a lot more can be done with the web server configuration. Such as applying the theme to only certain URLs, and creating a custom error page. The latter is unfortunately necessary as Apache errors don't go through the filter chain but wasn't a problem in practice; we just shipped error pages as part of the static theme.
 
