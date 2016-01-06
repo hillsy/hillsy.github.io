@@ -27,7 +27,7 @@ This would allow us to better separate content from presentation code. It'd also
 
 # Enter Diazo
 
-About this time I came across a presentation [^1] from the folks at Netsight [^2] who we'd worked with before. Charmingly titled "Lipstick on a Pig" it talked about how they'd used a tool called Diazo [^3] to change the user-facing presentation of a legacy .NET system. It was immediately obvious that this was something we could use.
+About this time I came across a presentation [^1] from the folks at Netsight [^2] who we'd worked with before. Charmingly titled *Lipstick on a Pig* it talked about how they'd used a tool called Diazo [^3] to change the user-facing presentation of a legacy .NET system. It was immediately obvious that this was something we could use.
 
 Diazo is some open source software that applies a static HTML theme to a website created using any technology. It takes a set of rules and an HTML template as input, and "compiles" those into an XSLT [^4] file for you. Deployed on an intermediary reverse-proxying web server (we used Apache) the XSLT file can be used to change the HTML markup of some or all your proxied services.
 
@@ -35,7 +35,7 @@ Here's a diagram:
 
 ![Diazo architecture](/assets/diazo-architecture.png)
 
-You can see we applied the template to a number of backends, including:
+So, we applied the template to a number of backends including:
 
   * Static content. These were things teams had written themselves and given us to host. The only thing they had to do was include a specific class in the `<body>` tag; we could then create a rule that lifted the entire `<body>` of their document into our template.
 
@@ -56,17 +56,20 @@ There are some things we didn't try. The Diazo documentation talks about deployi
 Here's a short example. I'll assume you already know a bit about how to use the command line and virtualenv.
 
   1. Set up the environment
-     ```bash
+     ```
      virtualenv diazo
+
      cd diazo && source bin/activate
+
      pip install zc.buildout
      ```
  2. lxml is a dependency; this buildout downloads and compiles the correct version. Alternative buildouts and installation methods are in the Diazo documentation [^5]
-    ```bash
+    ```
     curl http://hillsy.org/assets/diazo-buildout.cfg > buildout.cfg
+
     bin/buildout -v
     ```
-3. ...some stuff happens... quite a bit if you're compiling lxml...
+ 3. ...some stuff happens... quite a bit if you're compiling lxml...
 
 
 
@@ -79,6 +82,6 @@ Here's a short example. I'll assume you already know a bit about how to use the 
 
 [^3]: <http://diazo.org>
 
-[^4]: Extensible Stylesheet Language Transformations
+[^4]: <https://en.wikipedia.org/wiki/XSLT>
 
 [^5]: <http://docs.diazo.org/en/latest/installation.html>
