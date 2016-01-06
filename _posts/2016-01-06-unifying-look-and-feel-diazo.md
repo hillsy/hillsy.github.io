@@ -15,7 +15,7 @@ comments:     true
 
 A place I once worked had quite a big website. It ran on a CMS that was good for content but was pretty difficult to extend with new features. A lot of large monolithic systems are like that, which doesn't stop people trying to get them to do things they're not suited for. When what you have is a large hammer (and possibly you've invested quite a lot of money or time in hammer licenses or training), all your digital problems start to look very nail-ish.
 
-Eventually it came to pass that some parts of the site infrastructure needed to be updated. We took the opportunity to think about some improvements. We recognised the **user** didn't really care what system was being used to serve the site; they cared about a consistent experience. We also recognised that different technology stacks were better for different types of problems, and that different teams in the organisation used different technologies according to their own preference. We also noticed the web applications developed by these different teams were quite - ahem - variable in terms of their front end standards compliance, and didn't offer a consistent user experience.
+Eventually it came to pass that some parts of the site infrastructure needed to be updated. We took the opportunity to think about some improvements. We recognised the **user** didn't really care what system was being used to serve the site; they cared about a consistent experience. We also recognised that different technology stacks were better for different types of problems, and that different teams in the organisation used different technologies according to their own preference. We also noticed the web applications developed by these different teams were - ahem - variable in terms of their front end standards compliance, and didn't offer a consistent user experience.
 
 So one goal of the infrastructure update was to build something that:
 
@@ -35,7 +35,7 @@ Here's a diagram:
 
 ![Diazo architecture](/assets/diazo-architecture.png)
 
-So, we applied the template to a number of backends including:
+So we applied the template to a number of backends including:
 
   * Static content. These were things teams had written themselves and given us to host. The only thing they had to do was include a specific class in the `<body>` tag; we could then create a rule that lifted the entire `<body>` of their document into our template.
 
@@ -51,7 +51,7 @@ One reason for blogging about it now is that it never really got much recognitio
 
 There are some things we didn't try. The Diazo documentation talks about deploying it in a WSGI pipeline. We never did this; a simple HTTP proxy worked fine. We also only used it for anonymous content on public websites. It would have been interesting to try it on a site that had user accounts and personalisation.
 
-### Some code
+### Some example code, Luke
 
 Here's a short example. It assumes you already know a bit about how to use the command line, virtualenv, and both operating system and Python packages.
 
