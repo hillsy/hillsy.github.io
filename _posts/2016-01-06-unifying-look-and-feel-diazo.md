@@ -56,29 +56,22 @@ There are some things we didn't try. The Diazo documentation talks about deployi
 Here's a short example. It assumes you already know a bit about how to use the command line, virtualenv, and both operating system and Python packages.
 
 1. Set up the environment
-   ```
-   virtualenv diazo
 
-   cd diazo && source bin/activate
-
-   pip install zc.buildout
-   ```
+        virtualenv diazo
+        cd diazo && source bin/activate
+        pip install zc.buildout
 
 2. lxml is a dependency; this buildout downloads and compiles the correct version (alternative buildouts and installation methods are in the Diazo documentation [^5])
-   ```
-   curl http://hillsy.org/assets/diazo-buildout.cfg > buildout.cfg
 
-   bin/buildout -v
-   ```
+        curl http://hillsy.org/assets/diazo-buildout.cfg > buildout.cfg
+        bin/buildout -v
 
 3. ...some stuff happens... *...quite a bit if you're compiling lxml...*
 
 4. Get and compile a sample theme. You can see a full list of command line flags with `bin/diazocompiler --help`
-   ```
-   svn co https://svn.plone.org/svn/collective/collective.examples.diazo/trunk/collective/examples/diazo/static/collective-xdv-example/ ./theme
 
-   bin/diazocompiler -r theme/rules.xml -o theme/theme.xsl
-   ```
+        svn co https://svn.plone.org/svn/collective/collective.examples.diazo/trunk/collective/examples/diazo/static/collective-xdv-example/ ./theme
+        bin/diazocompiler -r theme/rules.xml -o theme/theme.xsl
 
 7. Sample config to deploy the XSLT to your web server (Apache in this case)
 
@@ -91,7 +84,7 @@ Here's a short example. It assumes you already know a bit about how to use the c
 
              TransformOptions +ApacheFS +HTML +HideParseErrors
              TransformSet /path/to/theme.xsl
-             TransformCache /theme.xsl /etc/apache2/theme.xsl
+             TransformCache /path/to/theme.xsl /etc/apache2/theme.xsl
 
              <LocationMatch "/">
                 FilterChain THEME
