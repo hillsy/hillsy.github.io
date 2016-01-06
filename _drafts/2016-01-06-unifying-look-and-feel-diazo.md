@@ -11,7 +11,7 @@ tags:         [diazo, python, plone, sysadmin, architecture]
 comments:     true
 ---
 
-# Integration from the UX perspective
+### Systems integration from the user's perspective
 
 A place I once worked had quite a big website. It ran on a CMS that was good for content but was pretty difficult to extend with new features. A lot of large monolithic systems are like that, which doesn't stop people trying to get them to do things they're not suited for. When what you have is a large hammer (and possibly you've invested quite a lot of money or time in hammer licenses or training), all your digital problems start to look very nail-ish.
 
@@ -25,7 +25,7 @@ So one goal of the infrastructure update was to build something that:
 
 This would allow us to better separate content from presentation code. It'd also reduce the burden on other teams and give a more consistent and better quality user experience, because we'd maintain branding, navigation elements and so on centrally.
 
-# Enter Diazo
+### Enter Diazo
 
 About this time I came across a presentation [^1] from the folks at Netsight [^2] who we'd worked with before. Charmingly titled *Lipstick on a Pig* it talked about how they'd used a tool called Diazo [^3] to change the user-facing presentation of a legacy .NET system. It was immediately obvious that this was something we could use.
 
@@ -43,7 +43,7 @@ So, we applied the template to a number of backends including:
 
   * Web applications. These were a disparate bunch, and one of the main reasons for doing this in the first place. The applications themselves remained completely standalone from a technical perspective, but we were able to consistently integrate them into our website from the user perspective.
 
-# So how did we do?
+### So how did we do?
 
 This was quite a successful project. It solved a problem that, as far as I know, a lot of heterogeneous digital estates have. It's still in production several years later, serving around 1 million visits a month. It was easy to deploy with a basic understanding of Python deployment tools, and a basic understanding of how to configure a web server as a reverse proxy. Performance was good; when benchmarked the backend services were the bottleneck, not the transform server.
 
@@ -51,35 +51,54 @@ One reason for blogging about it now is that it never really got much recognitio
 
 There are some things we didn't try. The Diazo documentation talks about deploying it in a WSGI pipeline. We never did this; a simple HTTP proxy worked fine. We also only used it for anonymous content on public websites. It would have been interesting to try it on a site that had user accounts and personalisation.
 
-# The code
+### Some code
 
-Here's a short example. I'll assume you already know a bit about how to use the command line and virtualenv.
+Here's a short example. It assumes you already know a bit about how to use the command line, virtualenv, and both operating system and Python packages.
 
-  1. Set up the environment
+1. Set up the environment
+   ```
+   virtualenv diazo
 
-        virtualenv diazo
+   cd diazo && source bin/activate
 
-        cd diazo && source bin/activate
+   pip install zc.buildout
+   ```
 
-        pip install zc.buildout
+2. lxml is a dependency; this buildout downloads and compiles the correct version (alternative buildouts and installation methods are in the Diazo documentation [^5])
+   ```
+   curl http://hillsy.org/assets/diazo-buildout.cfg > buildout.cfg
+   bin/buildout -v
+   ```
 
- 2. lxml is a dependency; this buildout downloads and compiles the correct version. Alternative buildouts and installation methods are in the Diazo documentation [^5]
+3. ...some stuff happens... quite a bit if you're compiling lxml...
 
-        curl http://hillsy.org/assets/diazo-buildout.cfg > buildout.cfg
+4. Get and compile a sample theme. You can see a full list of command line flags with `bin/diazocompiler --help`
+   ```
+   svn co https://svn.plone.org/svn/collective/collective.examples.diazo/trunk/collective/examples/diazo/static/collective-xdv-example/ ./theme
+   bin/diazocompiler -r theme/rules.xml -o theme/theme.xsl
+   ```
 
-        bin/buildout -v
+7. Sample config to deploy the XSLT to your web server (Apache in this case)
+   ```
+   # see http://docs.diazo.org/en/latest/deployment.html#apache
+   LoadModule transform_module /usr/lib/apache2/modules/mod_transform.so
+   <VirtualHost *>
 
- 3. ...some stuff happens... quite a bit if you're compiling lxml...
+     FilterDeclare THEME
+     FilterProvider THEME XSLT resp=Content-Type $text/html
 
- To deploy changes:
+     TransformOptions +ApacheFS +HTML +HideParseErrors
+     TransformSet /path/to/theme.xsl
+     TransformCache /theme.xsl /etc/apache2/theme.xsl
 
- Make your edits and svn switch on the filesystem, to get the new theme code
- Compile the theme: bin/diazocompiler -r wwwcfh.xml -o /etc/apache2/wwwcfh.xsl
- Restart Apache: /etc/init.d/apache2 restart
- Note the command line arguments passed to bin/diazocompiler. You can see a full list of options with bin/diazocompiler --help
+     <LocationMatch "/">
+        FilterChain THEME
+     </LocationMatch>
 
+   </VirtualHost>
+   ```
 
-
+There's quite a lot more can be done with the web server configuration. Such as applying the theme to only certain URLs, and creating a custom error page. The latter is unfortunately necessary as Apache errors don't go through the filter chain but wasn't a problem in practice; we just shipped error pages as part of the static theme.
 
 [^1]: <http://www.slideshare.net/hammertoe/lipstick-on-a-pig>
 
