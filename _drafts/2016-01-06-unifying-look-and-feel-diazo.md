@@ -45,7 +45,7 @@ So, we applied the template to a number of backends including:
 
 # So how did we do?
 
-This was quite a successful project. It solved a problem that, as far as I know, a lot of heterogeneous digital estates have. It's still in production several years later, serving around 1 million visits a month. It was easy to deploy with a basic understanding of Python deployment tools, and a basic understanding of how to configure a web server as a reverse proxy. Performance was good - when benchmarked the backend services were the bottleneck, not the transform server.
+This was quite a successful project. It solved a problem that, as far as I know, a lot of heterogeneous digital estates have. It's still in production several years later, serving around 1 million visits a month. It was easy to deploy with a basic understanding of Python deployment tools, and a basic understanding of how to configure a web server as a reverse proxy. Performance was good; when benchmarked the backend services were the bottleneck, not the transform server.
 
 One reason for blogging about it now is that it never really got much recognition; only a few other teams ever started using it. Perhaps we didn't do a good job of explaining the clear benefits. Maybe the benefits weren't as clear as we thought. Perhaps people were nervous about centralising their look and feel, or perhaps they simply didn't care that much about consistent user experience. Centralised tools like this would probably see better adoption if they're in support of a central mandate ("you must use this") or strategy ("we're going to make UX a priority"). We didn't have those.
 
@@ -56,20 +56,18 @@ There are some things we didn't try. The Diazo documentation talks about deployi
 Here's a short example. I'll assume you already know a bit about how to use the command line and virtualenv.
 
   1. Set up the environment
-     ```
-     virtualenv diazo
 
-     cd diazo && source bin/activate
+        virtualenv diazo
 
-     pip install zc.buildout
-     ```
+        cd diazo && source bin/activate
+
+        pip install zc.buildout
 
  2. lxml is a dependency; this buildout downloads and compiles the correct version. Alternative buildouts and installation methods are in the Diazo documentation [^5]
-    ```
-    curl http://hillsy.org/assets/diazo-buildout.cfg > buildout.cfg
 
-    bin/buildout -v
-    ```
+        curl http://hillsy.org/assets/diazo-buildout.cfg > buildout.cfg
+
+        bin/buildout -v
 
  3. ...some stuff happens... quite a bit if you're compiling lxml...
 
