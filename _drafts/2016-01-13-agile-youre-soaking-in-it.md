@@ -33,15 +33,16 @@ There's nothing wrong with agile with a small "a". In many ways this usage is ac
 
 The reasons for working in an agile way can be explained in three bullet points without reference to sprints, backlogs, kanban etc:
 
-	* On complex projects, it's hard to get a complete set of requirements. Big sets of requirements are intimidating, and often wrong. And requirements on all projects, almost inevitably, change. **Embrace change** rather than trying to control it, and constantly monitor your requirements and assumptions.
+* On complex projects, it's hard to get a complete set of requirements. Big sets of requirements are intimidating, and often wrong. And requirements on all projects, almost inevitably, change. **Embrace change** rather than trying to control it, and constantly monitor your requirements and assumptions.
 
-	* **It's better to ship 20% of the business value, then 40%, then 60%, then 80%**. Rather than waiting until you have 80% before you deliver any of it. This demonstrates progress and keeps communication going. Also, rework is costly and some of your early assumptions may be wrong. Better to find that out early.
+* **It's better to ship 20% of the business value, then 40%, then 60%, then 80%**. Rather than waiting until you have 80% before you deliver any of it. This demonstrates progress and keeps communication going. Also, rework is costly and some of your early assumptions may be wrong. Better to find that out early.
 
-	* **To achieve the above it's best to have small, empowered teams** with members that a) know the business requirements as they're understood at that point and b) know the current state of the project, particularly with reference to the bit they're working on. Keep your people informed, but don't over-communicate.
+* **To achieve the above it's best to have small, empowered teams** with members that a) know the business requirements as they're understood at that point and b) know the current state of the project, particularly with reference to the bit they're working on. Keep your people informed, but don't over-communicate.
 
 Being agile means embracing change, effective (not voluminous) communication, incremental understanding of requirements, and managing complexity so you're only focusing on one deliverable thing at a time. It's simple stuff really. Practically speaking this often means regular short meetings, lots of Post-It notes, a preference for delivery over documentation, direct engagement with stakeholders, and the ability to make changes directly. But these are just some symptoms of being agile; they're nothing special in themselves.
 
 [^footnote]:
+
 There are lots of [meetups](http://agile-project-management.meetup.com/) where you can discuss this sort of thing. I sometimes go to the [Leeds meetup](http://www.meetup.com/Agile-in-Leeds/) - come and say hi if you're ever there.
 
 [^1]: http://www.bothsidesofthetable.com/2009/11/19/what-makes-an-entrepreneur-four-lettersjfdi/
