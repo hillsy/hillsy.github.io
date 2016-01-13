@@ -27,7 +27,7 @@ Some other people in the team thought they understood agile working. But it turn
 
 This public sector organisation had historically been heavily oriented towards PRINCE2; probably still was to some extent. And the public sector tends to emphasise the importance of The Correct Process over the importance of JFDI [^1] anyway. So it wasn't entirely surprising the team were searching for a formal understanding of "Agile". And the people who thought they understood it, well, they were mostly getting distracted by shiny new ways of doing things.
 
-The last comment really resonated with me. That person was already being effective and agile in their daily work; possibly more than some who follow formal "Agile" methods. They were soaking in it [^2] but they didn't recognise it for what it was.
+The last comment really resonated with me. That person was already being effective and agile in their daily work; possibly more than some who follow formal "Agile" methods. They were already soaking in it [^2] but they didn't recognise it for what it was.
 
 There's nothing wrong with agile with a small "a". In many ways this usage is actually helpful, because it encourages you to think about what's important in an agile way of working, rather than the tools, processes, methodologies and labels. Agile isn't a noun, nor is it a panacea. Projects that do Agile without understanding the reasoning behind it are just as doomed to failure as projects that blindly apply PRINCE2 or any other methodology as a substitute for critical thinking.
 
@@ -45,6 +45,6 @@ Being agile means embracing change, effective (not voluminous) communication, in
 
 There are lots of [meetups](http://agile-project-management.meetup.com/) where you can discuss this sort of thing. I sometimes go to the [Leeds meetup](http://www.meetup.com/Agile-in-Leeds/) - come and say hi if you're ever there.
 
-[^1]: http://www.bothsidesofthetable.com/2009/11/19/what-makes-an-entrepreneur-four-lettersjfdi/
+[^1]: <http://www.bothsidesofthetable.com/2009/11/19/what-makes-an-entrepreneur-four-lettersjfdi/>
 
-[^2]: https://www.youtube.com/watch?v=dzmTtusvjR4
+[^2]: <https://www.youtube.com/watch?v=dzmTtusvjR4>
