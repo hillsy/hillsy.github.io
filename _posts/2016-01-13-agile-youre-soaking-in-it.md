@@ -41,7 +41,7 @@ The reasons for working in an agile way can be explained in three bullet points 
 
 Being agile means embracing change, effective (not voluminous) communication, incremental understanding of requirements, and managing complexity so you're only focusing on one deliverable thing at a time. It's simple stuff really. Practically speaking this often means regular short meetings, lots of Post-It notes, a preference for delivery over documentation, direct engagement with stakeholders, and the ability to make changes directly. But these are just some symptoms of being agile; they're nothing special in themselves.
 
-[^footnote]:
+### Postscript
 
 There are lots of [meetups](http://agile-project-management.meetup.com/) where you can discuss this sort of thing. I sometimes go to the [Leeds meetup](http://www.meetup.com/Agile-in-Leeds/) - come and say hi if you're ever there.
 
