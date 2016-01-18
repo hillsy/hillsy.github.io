@@ -149,8 +149,9 @@ pre {
     }
 }
 
-table {
-    border-color: $grey-color-light;
+td, th {
+    border: 1px solid $grey-color-light;
+    padding: 5px;
 }
 
 /**
