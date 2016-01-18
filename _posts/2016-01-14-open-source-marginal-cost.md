@@ -37,10 +37,10 @@ The actual figures were something like this:
 | **Total**   | **£6000**   | **£20,000** |
 |-------------+-------------+-------------|
 
-Other costs (servers, connectivity, etc) were the same for both. We were deploying on Windows in both cases though we could have squeezed some more money out there by deploying on an open source operating system such as Linux.
+Other costs (servers, connectivity, etc) were the same for both. We were deploying on Windows in both cases though we could have squeezed some more money out by deploying on an open source operating system such as Linux.
 
 Of course this model is simplistic. In the NHS, many software licenses are purchased in bulk and their marginal cost is low. On the other hand this wasn't one of those products, and there's an awful lot of artificial complexity imposed on some technology decisions. Sometimes a simple decision-making process is what's needed, particularly in relatively small, low cost and short term projects.
 
 Fast forward a few years, and I see similar things happening in cloud computing and DevOps. Say you want to scale horizontally (deploy many more of the same things), or you want to quickly bring up additional nodes on demand, or you want to rapidly and automatically build and tear down environments. Maybe you have to invest up front in training or configuration, but that investment pays off when you can deploy 10 (or 100, or 1,000) new things with almost no additional cost or effort.
 
-Low marginal cost is an important benefit of open source software, and a good tool in a business case. I wish more open source vendors made use of it, rather than just repeating the mantra about open source being cheap.
+Low marginal cost is an important benefit of open source software, and a good tool in a business case. Open source vendors should make more use of it, rather than just repeating the mantra about open source being cheap.
