@@ -33,7 +33,7 @@ Diazo is some open source software that applies a static HTML theme to a website
 
 Here's a diagram:
 
-![Diazo architecture](/assets/diazo-architecture.png)
+![Diazo architecture](/assets/diazo-architecture.png){:class="img-responsive"}
 
 So we applied the template to a number of backends including:
 
