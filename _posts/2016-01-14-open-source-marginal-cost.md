@@ -27,15 +27,15 @@ Plotted on a graph, it might look something like this:
 
 The actual figures were something like this:
 
--------------------------------------------
+|-------------+-------------+-------------|
 |             | Open source | Proprietary |
--------------------------------------------
+|-------------+-------------+-------------|
 | Training    | £6000       | £0          |
--------------------------------------------
+|-------------+-------------+-------------|
 | 10 licenses | £0          | £20,000     |
--------------------------------------------
+|-------------+-------------+-------------|
 | **Total**   | **£6000**   | **£20,000** |
--------------------------------------------
+|-------------+-------------+-------------|
 
 Other costs (servers, connectivity, etc) were the same for both. We were deploying on Windows in both cases though we could have squeezed some more money out there by deploying on an open source operating system such as Linux.
 
