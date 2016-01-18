@@ -23,7 +23,7 @@ So I went and did some homework to qualify the costs. It turned out we could get
 
 Plotted on a graph, it might look something like this:
 
-![Graph comparing number of projects vs total cost](/assets/marginal-cost-graph.png)
+![Graph comparing number of projects vs total cost](/assets/marginal-cost-graph.png){:class="img-responsive"}
 
 The actual figures were something like this:
 
