@@ -5,7 +5,7 @@ readout:      "We're not as cheap as you think, but we make it up in volume"
 image-file:   mk1-escort-production-line.jpg
 image-alt:    "MK1 Ford Escort production line"
 image-credit: https://www.flickr.com/photos/fordeu/13950192539
-date:         2016-01-15
+date:         2016-01-18
 categories:   post
 tags:         [opensource, architecture, management]
 comments:     true
