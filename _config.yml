@@ -10,3 +10,6 @@ linkedin_username: shaunhills
 
 # Build settings
 markdown: kramdown
+gems:
+  # http://bit.ly/1NqiLbT
+  - jekyll-seo-tag
